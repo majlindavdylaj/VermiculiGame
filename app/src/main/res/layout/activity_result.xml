@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.firetot.vermiculigame.ResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GAME OVER"
+            android:textSize="30sp"/>
+
+        <com.skydoves.medal.MedalLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:direction="right"
+            app:speed="5000"
+            app:turn="1">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:id="@+id/medal"/>
+
+        </com.skydoves.medal.MedalLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scoreLabel"
+            android:text="100"
+            android:textSize="25sp"
+            android:layout_marginTop="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hightScoreLabel"
+            android:text="120"
+            android:textSize="25sp"
+            android:layout_marginTop="30sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GAMES PLAED"
+            android:id="@+id/gamesPlayedLabel"
+            android:textSize="25sp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="tryAgain"
+            android:background="@drawable/ic_action_replay"
+            android:layout_marginTop="50dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.firetot.vermiculigame.ShopActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shop"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_coins"
+        android:text="100"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/diamond"
+        android:layout_marginTop="103dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_coins"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/home"
+        android:background="@drawable/ic_action_home"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:id="@+id/shopP1"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/player1a"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_margin="10dp"
+                android:id="@+id/shopP2"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/player2a"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="#c26c6b6b"
+                    android:id="@+id/unlock2"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#fff"
+                        android:text="LOCKED"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30"
+                        android:textColor="#fff"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:id="@+id/price2"
+                        android:layout_alignParentBottom="true"/>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_toRightOf="@+id/price2"
+                        android:src="@drawable/diamond"
+                        android:layout_margin="3dp"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_margin="10dp"
+                android:id="@+id/shopP3"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/player3a"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="#c26c6b6b"
+                    android:id="@+id/unlock3"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#fff"
+                        android:text="LOCKED"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50"
+                        android:textColor="#fff"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:id="@+id/price3"
+                        android:layout_alignParentBottom="true"/>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_toRightOf="@+id/price3"
+                        android:src="@drawable/diamond"
+                        android:layout_margin="3dp"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_margin="10dp"
+                android:id="@+id/shopP4"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/player4a"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="#c26c6b6b"
+                    android:id="@+id/unlock4"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#fff"
+                        android:text="LOCKED"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="80"
+                        android:textColor="#fff"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:id="@+id/price4"
+                        android:layout_alignParentBottom="true"/>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_toRightOf="@+id/price4"
+                        android:src="@drawable/diamond"
+                        android:layout_margin="3dp"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

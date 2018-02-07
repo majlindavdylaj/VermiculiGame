@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/background"
+    tools:context="com.firetot.vermiculigame.StartActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/more"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_action_more"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:text="Vermiculi"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/diamond"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 points"
+                android:textSize="18sp"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/food"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 points"
+                android:textSize="18sp"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/enemy1"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game Over"
+                android:textSize="18sp"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/enemy2"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game Over"
+                android:textSize="18sp"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/play"
+            android:background="@drawable/ic_action_play"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="30dp"
+            android:id="@+id/shop"
+            android:background="@drawable/ic_action_shop"/>
+        <!-- later we will add this feature -->
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
